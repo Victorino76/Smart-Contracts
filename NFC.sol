@@ -24,7 +24,7 @@ import '@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol';
 import '@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol';
 import '@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol';
 
-contract DRCS is ERC20, ERC20Pausable, Ownable, ERC20Permit, ERC20Votes {
+contract NFC is ERC20, ERC20Pausable, Ownable, ERC20Permit, ERC20Votes {
     using Math for uint256;
 
     IUniswapV2Router02 public immutable uniswapV2Router;
@@ -35,9 +35,9 @@ contract DRCS is ERC20, ERC20Pausable, Ownable, ERC20Permit, ERC20Votes {
     string exchangeLink = "https://app.uniswap.org/swap";
     string websiteLink = "https://app.uniswap.org/swap";
 
-    address public communityWallet = address(0xC6aa2f0FF6b8563EA418ec2558890D6027413699);
-    address public marketingWallet = address(0xC6aa2f0FF6b8563EA418ec2558890D6027413699);
-    address public developerWallet = address(0xC6aa2f0FF6b8563EA418ec2558890D6027413699);
+    address public communityWallet = address(0xC967104E61bec56C24008EFb326e94D2A7f67a1D);
+    address public marketingWallet = address(0xC967104E61bec56C24008EFb326e94D2A7f67a1D);
+    address public developerWallet = address(0xC967104E61bec56C24008EFb326e94D2A7f67a1D);
 
     bool public tradable = false;
     bool public swappable = false;
